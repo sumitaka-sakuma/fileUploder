@@ -9,7 +9,7 @@ class UploadersController extends Controller
 {
     public function index(){
 
-        $uploader = Uploader::orderBy('created_at', 'desc')->paginate(5);
+        $uploader = Uploader::all();
         return view('uploaders/index', compact('uploader'));
     }
 }
