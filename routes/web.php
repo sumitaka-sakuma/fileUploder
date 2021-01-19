@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('UploadersController/index', 'UploadersController@index')->name('index');
